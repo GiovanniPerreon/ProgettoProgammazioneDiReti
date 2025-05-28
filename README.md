@@ -7,6 +7,7 @@ un sito web statico. Il server gestisce richieste GET e restituisce file HTML e 
 
 Come si usa:
 Richiesto un ambiente con Python 3.
+Aprire il file server.py e se necessario posizionarsi nella cartella contenente www/ e server.py.
 Il server si avvia eseguendo il file server.py.
 La connessione al server avviene tramite browser all'indirizzo: http://localhost:8080.
 
