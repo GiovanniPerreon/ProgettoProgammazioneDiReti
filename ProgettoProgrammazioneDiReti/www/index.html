@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Progetto programmazione di reti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 50px;
+    }
+
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .section {
+      width: 250px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .section a {
+      display: block;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    .section a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="icons\logo.png" alt="Logo UNIBO">
+      <h1>Progetto programmazione di reti</h1>
+    </div>
+    <p>Esplora i concetti base di HTTP e il funzionamento di un server web semplice.</p>
+
+    <div class="sections">
+      <div class="section">
+        <img src="icons/globe.png" alt="Icona Introduzione">
+        <a href="intro.html">Introduzione generale</a>
+      </div>
+      <div class="section">
+        <img src="icons/server.png" alt="Icona Server">
+        <a href="server.html">Come il server risponde</a>
+      </div>
+      <div class="section">
+        <img src="icons/header.png" alt="Icona Header HTTP">
+        <a href="header.html">Intestazioni HTTP</a>
+      </div>
+      <div class="section">
+        <img src="icons/404.png" alt="Icona Errore 404">
+        <a href="404.html">Errore 404 - Pagina non trovata</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Funzionamento del Server HTTP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    p {
+      line-height: 1.5;
+    }
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #007BFF;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 img {
+      width: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <img src="icons/server.png" alt="Icona Server">
+      Come funziona il server HTTP
+    </h1>
+    <p>Questo progetto implementa un semplice server HTTP scritto in Python, il quale:</p>
+    <ul>
+      <li>Ascolta richieste HTTP sulla porta 8080 del computer locale.</li>
+      <li>Riceve richieste GET da un browser o client HTTP.</li>
+      <li>Analizza la richiesta per determinare quale file statico serve (HTML, CSS, immagini, ecc.).</li>
+      <li>Verifica se il file richiesto esiste nella cartella <code>www/</code>.</li>
+      <li>Se il file esiste, lo invia al client con l’intestazione HTTP corretta (Content-Type basato sull’estensione del file).</li>
+      <li>Se il file non esiste, risponde con un messaggio di errore 404.</li>
+    </ul>
+    <p>Il codice del server è contenuto nel file <code>server.py</code> e usa il modulo socket per gestire la comunicazione di rete.</p>
+    <p>Questa struttura permette di servire pagine web statiche semplici, simulando il funzionamento base di un vero web server.</p>
+
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="intro.html">Introduzione</a> |
+      <a href="header.html">Intestazioni HTTP</a>
+    </nav>
+  </div>
+</body>
+</html>

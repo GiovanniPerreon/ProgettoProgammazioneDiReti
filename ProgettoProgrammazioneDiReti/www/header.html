@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Intestazioni HTTP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    pre {
+      background-color: #222;
+      color: #0f0;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #007BFF;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 img {
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container">
+  <h1>
+    <img src="icons/header.png" alt="Icona Header HTTP">
+    Scambio di Intestazioni HTTP
+  </h1>
+
+  <p>1. <strong>Il client invia la richiesta al server:</strong></p>
+  <img src="icons/header_request_raw.png" alt="Intestazione richiesta client" style="max-width: 100%; border-radius: 6px;">
+
+  <p>2. <strong>Il server riceve la richiesta e genera un'intestazione di risposta, per esempio:</strong></p>
+  <pre>
+    HTTP/1.1 200 OK
+    Content-Type: text/html; charset=UTF-8
+    Content-Length: 342
+    Connection: keep-alive
+    Date: 28 May 2025 10:30:21
+  </pre>
+
+  <p>3. <strong>Il client riceve la risposta e visualizza la pagina richiesta.</strong></p>
+    <img src="icons/header_response.png" alt="Intestazione risposta server" style="max-width: 100%; border-radius: 6px;  margin- bottom: 16px;">
+    <img src="icons/header_response_raw.png" alt="Intestazione risposta server" style="max-width: 100%; border-radius: 6px;">
+
+
+  <nav style="margin-top: 20px; text-align: center;">
+    <a href="index.html">Home</a> |
+    <a href="intro.html">Introduzione</a> |
+    <a href="server.html">Risposte Server</a>
+  </nav>
+</div>
+
+  </div>
+</body>
+</html>
